@@ -1,0 +1,7 @@
+br/com/project/api/repository/BrandRepositoryTest.class
+br/com/project/api/service/ProductServiceTest.class
+br/com/project/api/controller/ProductControllerTest.class
+br/com/project/api/converter/BrandConverterTest.class
+br/com/project/api/converter/ProductConverterTest.class
+br/com/project/api/AppMeliTestApplicationTests.class
+br/com/project/api/repository/ProductRepositoryTest.class

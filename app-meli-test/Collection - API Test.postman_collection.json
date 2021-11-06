@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "93a3f0cd-dc94-482b-94ed-3c351923205f",
+		"name": "Collection - API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "FindAll - Brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/brand",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindById - Brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/brand/1",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete - Brand",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/brand/1",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update - Brand",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 1,\n  \"name\": \"kibon\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/brand",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save - Brand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"nestle\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/brand",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "FindAll - Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/product",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindById - Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/product/1",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete - Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/product/1",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update - Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"brand_id\": 2,\n  \"category\": \"gelados\",\n  \"id\": 1,\n  \"name\": \"picolé\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/product",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save - Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"brand_id\": 2,\n  \"category\": \"gelados\",\n  \"id\": 0,\n  \"name\": \"sorvete\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://app-meli-test.herokuapp.com/api/v1/product",
+							"protocol": "https",
+							"host": [
+								"app-meli-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
